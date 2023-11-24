@@ -1,0 +1,22 @@
+.navbar{
+    height: 100px;
+
+    .wrapper{
+        max-width:1336px;
+        height: 100%;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            font-weight: bold;
+        }
+        img{
+            margin: 8px;
+            height: 20px;
+        }
+        
+    }
+}
