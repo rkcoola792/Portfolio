@@ -1,23 +1,23 @@
 import "./app.scss" 
+import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Test from "./components/Test/Test";
 const App = () => {
   return (
     <div>
-      <section id="homepage">
+      <section id="Homepage">
         <Navbar />
+        <Hero></Hero>
       </section>
-      <section id="">
-        <a href="">Hero</a>
-      </section>
-      <section id="services">Parallax</section>
+
+      <section id="Services">Parallax</section>
       <section>Services</section>
-      <section id="portfolio">Parallax </section>
+      <section id="Portfolio">Parallax </section>
       <section>Portfolio 1</section>
       <section>Portfolio 2</section>
       <section>Portfolio 3</section>
-      <section id="contact">Contact </section>
-      <section id="about">About </section>
+      <section id="Contact">Contact </section>
+      <section id="About">About </section>
       {/* <Test/> */}
     </div>
   );

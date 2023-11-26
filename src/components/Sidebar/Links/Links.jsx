@@ -1,41 +1,54 @@
-import React from 'react'
-import {motion} from "framer-motion"
+import React from "react";
+import { motion } from "framer-motion";
 const Links = () => {
-  // const variants = {
-  //   open: {
-  //     transition: {
-  //       staggerChildren: 0.1,
-  //     },
-  //     close: {
-  //       transition: {
-  //         staggerChildren: 0.05,
-  //         staggerDirection: -1,
-  //       },
-  //     },
-  //   },
-  // };
-  // const itemVariants = {
-  //   open: {
-  //     transition: {
-  //       y: 0,
-  //       opacity: 1,
-  //     },
-  //     close: {
-  //       transition: {
-  //         y: 50,
-  //         opacity: 0,
-  //       },
-  //     },
-  //   },
-  // };
-  const items = ["homepage", "services","portfolio","contact","about",];
+  const variants = {
+    open: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+      close: {
+        transition: {
+          staggerChildren: 0.05,
+          staggerDirection: -1,
+        },
+      },
+    },
+  };
+  const itemVariants = {
+    open: {
+      transition: {
+        y: 0,
+        opacity: 1,
+        duration:1
+      },
+      close: {
+        transition: {
+          y: 50,
+          opacity: 0,
+          duration:1
+        },
+      },
+    },
+  };
+  const items = ["Homepage", "Services", "Portfolio", "Contact", "About"];
   return (
-    <div className='links' >
-      {items.map(item=>
-      <a href={`#${item}`} >{item}</a>
-      )}
-    </div>
-  )
-}
+    <motion.div
+      className="links"
+      variants={variants}
+    >
+      {items.map((item) => (
+        <motion.a
+          href={`#${item}`}
+          key={item}
+          variants={itemVariants}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          {item}
+        </motion.a>
+      ))}
+    </motion.div>
+  );
+};
 
-export default Links
+export default Links;

@@ -6,10 +6,11 @@ justify-content: center;
 background-color: white;
 color:black;
 position: absolute;
+z-index: 1;
     .bg{
         position: fixed;
         background: white;
-        width:400px;
+        width:300px;
         height: auto;
         top:0;
         left:0;
