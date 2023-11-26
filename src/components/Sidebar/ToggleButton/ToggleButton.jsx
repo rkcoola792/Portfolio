@@ -4,12 +4,17 @@ import CloseIcon from "@mui/icons-material/Close";
 const TOggleButton = ({setOpen,open}) => {
 
   return (
-    <div >
-      <button onClick={()=>{setOpen(prev=>!prev)}}>
-        {open?<CloseIcon/>:<MenuIcon></MenuIcon>}
+    <div>
+      <button
+        onBlur={() => setOpen(false)}
+        onClick={() => {
+          setOpen((prev) => !prev);
+        }}
+      >
+        {open ? <CloseIcon /> : <MenuIcon></MenuIcon>}
       </button>
     </div>
-  )
+  );
 }
 
 export default TOggleButton
