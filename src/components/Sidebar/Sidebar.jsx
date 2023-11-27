@@ -6,7 +6,7 @@ import ToggleButton from "./ToggleButton/ToggleButton";
 import { useState } from "react";
 
 const Sidebar = () => {
-   const [open,setOpen]=useState("")
+   const [open,setOpen]=useState(false)
   const variants = {
     open: {
       clipPath: "circle(1200px at 50px 50px)",
