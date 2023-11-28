@@ -17,12 +17,8 @@ const variants = {
     },
   },
 };
- 
-
 
 const Services = () => {
-   
- 
   return (
     <motion.div
       className="services"

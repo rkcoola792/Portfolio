@@ -35,6 +35,7 @@ const Links = () => {
     <motion.div
       className="links"
       variants={variants}
+      // animate={isOpen?"open":"closed"}
     >
       {items.map((item) => (
         <motion.a
