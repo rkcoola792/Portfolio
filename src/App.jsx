@@ -1,4 +1,5 @@
 import "./app.scss" 
+import Contact from "./components/Contact/Contact";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import Parallex from "./components/Parallex/Parallex";
@@ -21,7 +22,7 @@ const App = () => {
         <Parallex type="portfolio" />{" "}
       </section>
      <Portfolio></Portfolio>
-      <section id="Contact">Contact </section>
+      <section id="Contact"><Contact/></section>
       <section id="About">About </section>
       {/* <Test/> */}
     </div>
