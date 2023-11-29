@@ -30,6 +30,7 @@
       stroke: orange;
       height: 400px;
       width: 400px;
+      z-index: -1;
     }
     form {
       display: flex;
@@ -43,6 +44,9 @@
         border: none;
         border: 1px solid white;
         border-radius: 5px;
+      }
+      .message{
+        color: azure;
       }
       button {
         background-color: orange;
