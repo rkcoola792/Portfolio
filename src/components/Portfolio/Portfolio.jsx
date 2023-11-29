@@ -33,10 +33,9 @@ const Single = ({ item }) => {
   const ref = useRef();
   const { scrollYProgress } = useScroll({
     target: ref,
-    // offset:["0 0","1 0"]
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-500, 400]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 0]);
 
   return (
     <section>

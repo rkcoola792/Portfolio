@@ -1,54 +1,60 @@
 .contact {
- display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    padding-top: 70px;
-    // padding-bottom: 60px;
-    gap: 50px;
-    margin: auto;
-    width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 70px;
+  gap: 50px;
+  margin: auto;
+  width: 70%;
+  // margin-top: 100px;
 
   .textContainer {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    h1{
-        font-size: 64px;
-        line-height: 0.95;
+    h1 {
+      font-size: 64px;
+      line-height: 0.95;
     }
-    span{
-        font-weight: 300;
+    span {
+      font-weight: 300;
     }
   }
   .formContainer {
-  flex: 1;
-  form {
-    
-    display: flex;
-    flex-direction: column;
-
-    gap: 15px;
-    input,textArea{
-    padding: 10px;
-    background-color: transparent;
-    color: white;
-    border: none;
-    border: 1px solid white;
-    border-radius: 5px;
+    flex: 1;
+    position: relative;
+    .svg  {
+      position: absolute;
+      stroke: orange;
+      height: 400px;
+      width: 400px;
     }
-    button{
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      input,
+      textArea {
+        padding: 10px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border: 1px solid white;
+        border-radius: 5px;
+      }
+      button {
         background-color: orange;
         padding: 15px;
         border-radius: 5px;
         cursor: pointer;
         font-weight: 500;
         font-size: large;
-        &:hover{
-            opacity: 85%;
+        &:hover {
+          opacity: 85%;
         }
+      }
     }
   }
-}
 }
