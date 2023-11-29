@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./test.scss"
 
 import {motion} from "framer-motion"
 const Test = () => {
-
+const [a,setA]=useState(true)
+const [as,setAs]=useState(0)
   const variants={
     initial:{
       x:-500,
@@ -37,15 +38,26 @@ const Test = () => {
       }
     }
   }
-
+  useEffect(()=>{
+    console.log("hi " ,as )
+  },[as])
+  console.log("as "+as)
   return (
-    <motion.div className='test' variants={variants} initial="initial" animate="animate">
-    <motion.div className='children' variants={itemVariants}></motion.div>
-    <motion.div className='children' variants={itemVariants}></motion.div>
-    <motion.div className='children' variants={itemVariants}></motion.div>
-      
-    </motion.div>
-  )
+    <>
+      <button onClick={()=>setA(!a)}>click</button>
+      <button onClick={()=>setAs((prev)=>prev+1)}>click</button>
+      <motion.div
+        className="test"
+        variants={variants}
+        initial="initial"
+        animate="animate"
+      >
+        <motion.div className="children" variants={itemVariants}></motion.div>
+        <motion.div className="children" variants={itemVariants}></motion.div>
+        <motion.div className="children" variants={itemVariants}></motion.div>
+      </motion.div>
+    </>
+  );
 }
 
 export default Test
