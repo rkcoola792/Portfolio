@@ -42,7 +42,12 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="wrapper">
-        <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
+        <motion.div
+          className="textContainer"
+          variants={textVariants}
+          initial="initial"
+          animate="animate"
+        >
           <motion.h2 variants={textVariants} className="">
             Rajeev Kumar
           </motion.h2>
@@ -51,13 +56,30 @@ const Hero = () => {
           </motion.h1>
 
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>See the latest work</motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <a href="#Portfolio">
+              <motion.button variants={textVariants}>
+                See the latest work
+              </motion.button>
+            </a>
+            <a href="#Contact">
+              <motion.button variants={textVariants}>Contact Me</motion.button>
+            </a>
           </motion.div>
-          <motion.img variants={textVariants} src="./scroll.png" animate="scrollButton"></motion.img>
+          <motion.img
+            variants={textVariants}
+            src="./scroll.png"
+            animate="scrollButton"
+          ></motion.img>
         </motion.div>
       </div>
-      <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">Full Stack Developer</motion.div>
+      <motion.div
+        className="slidingTextContainer"
+        variants={sliderVariants}
+        initial="initial"
+        animate="animate"
+      >
+        Full Stack Developer
+      </motion.div>
       <div className="imageContainer">
         <img src="./avatar.png"></img>
       </div>

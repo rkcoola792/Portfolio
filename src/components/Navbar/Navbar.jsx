@@ -6,29 +6,30 @@ import HomeIcon from "@mui/icons-material/Home";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <Sidebar/>
+      <Sidebar />
 
       <div className="wrapper">
-        <motion.span className='left-icon'
+        <motion.span
+          className="left-icon"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 0, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
           Home
         </motion.span>
-        <motion.div  
+        <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
           className="right-icons social"
         >
-          <a href="#">
+          <a href="https://www.instagram.com/itsnotrk792/">
             <img src="/instagram.png"></img>
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/rajeev-kumar-3979b3172/">
             <img src="/linkdin.png"></img>
           </a>
-          <a href="">
+          <a href="#Contact">
             <img src="/email.png"></img>
           </a>
         </motion.div>

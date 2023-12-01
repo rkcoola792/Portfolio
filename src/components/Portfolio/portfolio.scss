@@ -48,10 +48,12 @@
 
     .image {
       flex: 1;
+      
       img {
         height: 250px;
         width: 100%;
         object-fit: cover;
+        border-radius: 10px;
       }
     }
 

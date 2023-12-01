@@ -18,10 +18,7 @@ const variants = {
 
 const Services = () => {
   return (
-    <motion.div
-      className="services"
-      variants={variants}
-    >
+    <motion.div className="services" variants={variants}>
       <motion.div
         className="textContainer"
         variants={variants}
@@ -43,12 +40,18 @@ const Services = () => {
         <div className="title">
           <img src="people.webp"></img>
           <h1>
-            <b>Unique </b>Ideas
+            <span>
+              <b>Unique </b>
+            </span>
+            Ideas
           </h1>
         </div>
         <div className="title">
           <h1>
-            <b>For your </b> Business.
+            <span>
+              <b>For your </b>
+            </span>{" "}
+            Business.
           </h1>
           <button>WHAT WE DO?</button>
         </div>
@@ -60,36 +63,45 @@ const Services = () => {
         whileInView="animate"
       >
         <div className="box">
-          <h2>Branding</h2>
+          <h2>Frontend</h2>
           <p>
-            lorem ipsum dolor fhas njkasdui fjdf lorem ipsum dolor fhas njkasdui
-            fjdf
+            Creating beautifull UI and UX experience with latest frontend
+            technologies.
           </p>
-          <button>GO</button>
+          <a href="https://drive.google.com/file/d/1ZHAVVrT3_FLrKII8TZtaJKa9AQeMEasB/view?usp=sharing">
+            {" "}
+            <button>GO</button>
+          </a>
         </div>
         <div className="box">
-          <h2>Branding</h2>
+          <h2>Backend</h2>
           <p>
-            lorem ipsum dolor fhas njkasdui fjdf lorem ipsum dolor fhas njkasdui
-            fjdf
+            Can handle the server side code as well with NodeJS, express server
+            and javascript.
           </p>
-          <button>GO</button>
+          <a href="https://drive.google.com/file/d/1Prau9Fnyy5Pq9MRI9k9rNA-yLDLVJVKn/view?usp=sharing">
+            <button>GO</button>
+          </a>
         </div>
         <div className="box">
-          <h2>Branding</h2>
+          <h2>Database</h2>
           <p>
-            lorem ipsum dolor fhas njkasdui fjdf lorem ipsum dolor fhas njkasdui
-            fjdf
+            Experience in multiple databases like mongoDb, SQL, and redis for
+            faster data retrieval.
           </p>
-          <button>GO</button>
+          <a href="https://drive.google.com/file/d/1VUSu4W19vQ---Gtw1iHJzBLsKEJr1vJ8/view?usp=sharing">
+            <button>GO</button>
+          </a>
         </div>
         <div className="box">
-          <h2>Branding</h2>
+          <h2>Deploy</h2>
           <p>
-            lorem ipsum dolor fhas njkasdui fjdf lorem ipsum dolor fhas njkasdui
-            fjdf
+            Knowledge of CI/CD pipelines, git, AWS and
+            firebase for deployment and maintenance.
           </p>
-          <button>GO</button>
+          <a href="https://todo-list-react-redux-toolkit.web.app/">
+            <button>GO</button>
+          </a>
         </div>
       </motion.div>
     </motion.div>
