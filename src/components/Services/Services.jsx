@@ -4,16 +4,14 @@ import { motion } from "framer-motion";
 
 const variants = {
   initial: {
-    x: -500,
     opacity: 0,
   },
   animate: {
-    x: 0,
     opacity: 1,
     transition: {
-      duration: 0.8,
+      duration: 1,
       staggerChildren: 0.1,
-      // delay:0.1
+      delay:0.1
     },
   },
 };
@@ -22,7 +20,7 @@ const Services = () => {
   return (
     <motion.div
       className="services"
-      // variants={variants}
+      variants={variants}
     >
       <motion.div
         className="textContainer"
