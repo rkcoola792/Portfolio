@@ -15,10 +15,10 @@ const App = () => {
         <Navbar />
         <Hero></Hero>
       </section>
-
       <section id="Services">
         <Parallex type="services" />
       </section>
+
       <section><Services></Services></section>
       <section id="Portfolio">
         <Parallex type="portfolio" />{" "}

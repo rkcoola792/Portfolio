@@ -1,3 +1,4 @@
+@import "../../app.scss";
 .parallex{
     height: 100%;
     width: 100%;
@@ -28,6 +29,11 @@
         height: 100%;
         position: absolute;
         z-index: 2;
+
+        @include mobile{
+            top:90px;
+            height: 35%;
+        }
     }
     .stars{
         background-image: url("./stars.png");
