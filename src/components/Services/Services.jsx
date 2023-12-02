@@ -53,7 +53,7 @@ const Services = () => {
             </span>{" "}
             Business.
           </h1>
-          <button>WHAT WE DO?</button>
+          <button>WHAT I DO?</button>
         </div>
       </motion.div>
       <motion.div
